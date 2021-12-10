@@ -1,0 +1,23 @@
+@import 'colors';
+form {
+    border: 1px solid $main-color;
+    border-radius: 3px;
+    padding: 40px;
+    i{
+        color: $main-color;
+    }
+    #name{
+        border: $main-color solid 2px !important;
+    }
+}
+
+input {
+    padding: 5px 20px;
+    width: 100%;
+    line-height: 16px;
+    margin: 10px 0;
+}
+input[type='submit']{
+    background:  #651e3e !important;
+}
+

@@ -1,0 +1,53 @@
+@import 'colors';
+footer{
+    color: crimson;
+    background: $background-color;
+    width: 100%;
+    padding: 30px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    P{
+        font-size: 30px;
+    }
+    p::first-letter{
+        color: orange;
+        font-size: 35px;
+    }
+    .footer_links{
+        border-top: 1px solid rgba(220, 20, 60, 0.527);
+        a{
+            text-decoration: none;
+            color: crimson;
+        }
+    }
+    .footer_icon{
+        font-size: 50px;
+        margin: 20px;
+    }
+    h4{
+        margin-top: 60px;
+        font-weight: 200;
+        font-size: 20px;
+    }
+}
+
+
+
+@media(max-width: 900px){
+    footer{
+        P{
+            font-size: 20px;
+        }
+        p::first-letter{
+            font-size: 25px;
+        }
+        .footer_icon{
+            font-size: 35px;
+        }
+        h4{
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Meaning</title>
+    <link rel="icon" type="image/ico" href="../images/favicon.ico">
+    <!-- Custom styles -->
+
+    <link rel="stylesheet" href="/styles/resets.css">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/form.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- MD Bootstrap -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            Meaning
+        </div>
+        <div id="moveNavLinks" class="links_block">
+            <ul class="nav_links">
+                <li> <a target="_blank"
+                        href="https://learn.meaningcloud.com/developer/text-classification/2.0/console">Used API
+                        Docs</a></li>
+                <li> <a target="_blank" href="">GitHub Repo</a></li>
+                <li> <a target="_blank" href="">Udacity</a></li>
+                <li> <a target="_blank" href="">About</a></li>
+            </ul>
+        </div>
+        <div class="navBtn" onclick="Client.showNavLinks()">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <form class="" onsubmit="return handleSubmit(event)">
+                <!-- <textarea id="name" type="text" name="input"  placeholder="Name"></textarea> -->
+                <!--Textarea with icon prefix-->
+                <div class="md-form pink-textarea active-amber-textarea-2">
+                    <i class="fas fa-pencil-alt prefix"> Website classification</i>
+                    <input type="url" id="name" value="" placeholder="*Paste your link" class="md-textarea form-control"
+                        rows="3">
+                    <label for="name"></label>
+                </div>
+                <input id="check" class="btn btn-secondary" type="submit" value="Check"
+                    onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+            </form>
+            <section>
+                <section>
+                    <div id="results"></div>
+                </section>
+    </main>
+
+    <footer>
+        <p>#Abdulkhak Tursunov</p>
+        <div class="footer_links">
+            <a href=""><i class="fas fa-network-wired footer_icon "></i></a>
+            <a href=""> <i class="fa fa-github footer_icon" aria-hidden="true"></i></a>
+            <a href=""><span class="iconify footer_icon" data-icon="fontisto:udacity"></span></a>
+            <a href=""> <i class="fab fa-telegram footer_icon"></i></a>
+        </div>
+        <h4> ©2021 Fergana UZB, Inc. All rights reserved.</h4>
+    </footer>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+    <script src="https://use.fontawesome.com/d4803fea57.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+
+
+</body>
+
+</html>
