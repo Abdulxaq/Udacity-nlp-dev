@@ -1,4 +1,4 @@
-# Project Instructions
+# Project walk through
 
 This web app is website classifying app based on Url. In details, it defines the classification of website in percentage.
 
@@ -40,7 +40,7 @@ Next we need to declare our API keys, which will look something like this:
 
 ```
 You do not have to import API_KEY from ```.env``` file. In this project, ```dotenv-webpack``` plugin is used, it will do all works in the obehind.
-## Step 4: Using the API
+## Step 4: NPM script commands
 
 All necesseryt script commands are set:
 ```
