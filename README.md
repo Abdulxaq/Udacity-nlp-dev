@@ -3,12 +3,11 @@
 This web app is website classifying app based on Url. In details, it defines the classification of website in percentage.
 
 I used following things in project:
-- Setting up Webpack
-- Sass styles
+- Webpack
+- Sass
 - Webpack Loaders and Plugins
-- Creating layouts and page design
 - Service workers
-- Using APIs and creating requests to external urls
+- [Meaningful Cloud API](https://learn.meaningcloud.com/developer/text-classification/2.0/console)
 
 I used [Meaningful Cloud API](https://learn.meaningcloud.com/developer/text-classification/2.0/console), it;s free and has other API options too, if you wish!
 
