@@ -9,9 +9,6 @@ import './styles/form.scss'
 import './styles/header.scss'
 import './images/favicon.ico'
 
-// console.log(checkForName);
-
-// console.log("CHANGE!!");
 
 export {
     handleSubmit,

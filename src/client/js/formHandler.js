@@ -19,7 +19,7 @@ const handleSubmit = async (event) => {
       redirect: 'follow'
     };
     
-    const response = fetch("https://api.meaningcloud.com/class-2.0", requestOptions)
+     const response = fetch("https://api.meaningcloud.com/class-2.0", requestOptions)
       .then(response => ({
         status: response.status, 
         body:  response.json()
@@ -28,11 +28,7 @@ const handleSubmit = async (event) => {
         return status, body
     })
     .then((status, body)=>{
-        console.log(status.category_list)
-        console.log(status.category_list[0].label)
-        console.log(status, body);
-        console.log(status.category_list.length);
-
+      console.log(status);
         results.innerHTML = `
                     <h1>${webUrl}</h1>
                     <div class="tab" >
@@ -50,29 +46,8 @@ const handleSubmit = async (event) => {
             results.append(div);
             
         }
-        // document.getElementById('results').innerHTML = 
-        // document.getElementById('results').innerHTML = `
-        //                 <div>
-        //                     <p>Catygory of website</p>
-        //                     <p>Website catygory in %</p>
-        //                     <p>Language of website</p>
-        //                 </div>
-        //                 <div>
-        //                     <p>Catygory of website</p>
-        //                     <p>Website catygory in %</p>
-        //                     <p>Language of website</p>
-        //                 </div>
-        //                 <div>
-        //                     <p>Catygory of website</p>
-        //                     <p>Website catygory in %</p>
-        //                     <p>Language of website</p>
-        //                 </div>`
     })
-
-      .catch(error => console.log('error', error));
-
-
-
+    .catch(error => console.log('error', error));
 }
 
 export { handleSubmit }
